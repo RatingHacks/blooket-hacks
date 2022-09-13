@@ -37,8 +37,8 @@
                         },
                         body: await encodeValues({
                             name: x.name,
-                            addedTokens: 500,
-                            addedXp: 300
+                            addedTokens: 10000,
+                            addedXp: 3000
                         }, e.secret)
                     });
                     fetch("https://api.blooket.com/api/users/add-rewards", {
@@ -50,7 +50,7 @@
                         },
                         body: await encodeValues({
                             name: x.name,
-                            addedTokens: 500,
+                            addedTokens: 10000,
                             addedXp: 300
                         }, e.secret)
                     }).then(() => alert('Added daily rewards!')).catch(() => alert('There was an error when adding rewards!'));;
